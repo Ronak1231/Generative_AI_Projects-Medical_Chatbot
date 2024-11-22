@@ -1,5 +1,5 @@
 
-# 🌟 Medical Chatbot - End-to-End Generative AI Application
+# ⚕️🩺🥼💉 Medical Chatbot - End-to-End Generative AI Application
 
 This project implements an end-to-end medical chatbot using Flask as the backend framework and a combination of LangChain, Pinecone, and Hugging Face embeddings for natural language processing and retrieval-augmented generation (RAG).
 
@@ -7,7 +7,7 @@ The chatbot is capable of answering user queries by leveraging a retriever-based
 
 ---
 
-## Features
+## ✅Features
 
 - **PDF Loading & Text Processing**: Extracts and processes text from medical PDFs for embedding and storage.
 - **Pinecone Vector Store**: Stores and retrieves document embeddings for context-based responses.
@@ -18,7 +18,7 @@ The chatbot is capable of answering user queries by leveraging a retriever-based
 
 ---
 
-## Prerequisites
+## 📜Prerequisites
 
 Ensure the following are installed and configured:
 
@@ -40,7 +40,7 @@ Ensure the following are installed and configured:
 
 ---
 
-## Setup Instructions
+## 🛠Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -84,7 +84,7 @@ Navigate to `http://localhost:8080` in your browser to interact with the chatbot
 
 ---
 
-## File Structure
+## 🗃️File Structure
 
 ```
 project/
@@ -109,7 +109,7 @@ project/
 
 ---
 
-## How It Works
+## 🤷How It Works
 
 ### Backend Flow
 
@@ -128,7 +128,7 @@ project/
 
 ---
 
-## Technologies Used
+## 🤖Technologies Used
 
 - **Flask**: For backend server and API routing.
 - **LangChain**: Orchestrates the retrieval and generation logic.
@@ -138,18 +138,22 @@ project/
 
 ---
 
-## Deployment
+## 🚚Deployment
 
 This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cloud, Heroku). Ensure your API keys are securely stored in environment variables.
 
 ---
 
-## Future Improvements
+## 🔜Future Improvements
 
 1. Add user authentication for personalized experiences.
 2. Expand to support multi-language queries.
 3. Incorporate advanced LLMs for more nuanced responses.
 
+---
+
+## ✍️ Author  
+Ronak Bansal
 ---
 
 ## 🙌 Contributing  
@@ -167,7 +171,7 @@ For inquiries or support, contact [ronakbansal12345@gmail.com].
 
 ---
 
-## Acknowledgments
+## 🤝Acknowledgments
 
 - [LangChain](https://langchain.com/)
 - [Pinecone](https://www.pinecone.io/)
