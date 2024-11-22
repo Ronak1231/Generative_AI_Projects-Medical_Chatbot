@@ -32,7 +32,7 @@ Ensure the following are installed and configured:
 **File Structure:**
 
 project/
-│
+
 ├── app.py     
 ├── src/
 │   ├── helper.py     
