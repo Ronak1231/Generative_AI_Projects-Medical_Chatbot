@@ -151,7 +151,6 @@ This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cl
 3. Incorporate advanced LLMs for more nuanced responses.
 
 ---
----
 
 ## 🙌 Contributing  
 Feel free to fork this repository, make improvements, and submit a pull request.  
