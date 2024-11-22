@@ -28,6 +28,8 @@ Ensure the following are installed and configured:
 3. Pinecone API Key and Index setup.
 4. Hugging Face model (sentence-transformers/all-MiniLM-L6-v2 for embeddings).
 5. Flask framework.
+6. ## Download the Llama 2 Model: llama-2-7b-chat.ggmlv3.q4_0.bin
+   ## From the following link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
 
 **File Structure:**
 
@@ -48,7 +50,6 @@ project/
 │   ├── chat.html 
 
 ├── model/
-
 │   ├── llama-2-7b-chat.ggmlv3.q2_K.bin #from the following link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
 │
 ├── requirements.txt     
