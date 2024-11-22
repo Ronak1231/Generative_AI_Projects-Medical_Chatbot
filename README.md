@@ -88,6 +88,9 @@ project/
 │   ├── helper.py          # PDF processing and embedding functions
 │   ├── prompt.py          # Chat prompt templates
 │
+├── model/
+│   ├── llama-2-7b-chat.ggmlv3.q4_0.bin
+│
 ├── static/
 │   ├── style.css          # Chat UI styles
 │
