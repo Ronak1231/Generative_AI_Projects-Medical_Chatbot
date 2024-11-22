@@ -71,6 +71,12 @@ Use the provided `helper.py` functions to upload medical document embeddings int
 ### 5. Run the Flask App
 
 ```bash
+python store_index.py
+```
+
+### 6. Run the Flask App
+
+```bash
 python app.py
 ```
 
