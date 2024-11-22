@@ -1,5 +1,5 @@
 
-# Medical Chatbot - End-to-End Generative AI Application
+# 🌟 Medical Chatbot - End-to-End Generative AI Application
 
 This project implements an end-to-end medical chatbot using Flask as the backend framework and a combination of LangChain, Pinecone, and Hugging Face embeddings for natural language processing and retrieval-augmented generation (RAG).
 
@@ -151,10 +151,20 @@ This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cl
 3. Incorporate advanced LLMs for more nuanced responses.
 
 ---
+---
 
-## License
+## 🙌 Contributing  
+Feel free to fork this repository, make improvements, and submit a pull request.  
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+---
+
+## 🐛 Troubleshooting  
+If you encounter issues, please create an issue in this repository.  
+
+---
+
+## 📧 Contact  
+For inquiries or support, contact [ronakbansal12345@gmail.com].  
 
 ---
 
