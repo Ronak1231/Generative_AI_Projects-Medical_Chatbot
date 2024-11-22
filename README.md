@@ -152,8 +152,18 @@ This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cl
 
 ---
 
+## 🤝Acknowledgments
+
+- [LangChain](https://langchain.com/)
+- [Pinecone](https://www.pinecone.io/)
+- [Hugging Face](https://huggingface.co/)
+- [Bootstrap](https://getbootstrap.com/)
+
+---
+
 ## ✍️ Author  
 Ronak Bansal
+
 ---
 
 ## 🙌 Contributing  
@@ -169,11 +179,3 @@ If you encounter issues, please create an issue in this repository.
 ## 📧 Contact  
 For inquiries or support, contact [ronakbansal12345@gmail.com].  
 
----
-
-## 🤝Acknowledgments
-
-- [LangChain](https://langchain.com/)
-- [Pinecone](https://www.pinecone.io/)
-- [Hugging Face](https://huggingface.co/)
-- [Bootstrap](https://getbootstrap.com/)
