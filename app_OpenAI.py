@@ -12,9 +12,10 @@ import os
 # Flask App
 app = Flask(__name__)
 
-# Hardcoded API Keys
-PINECONE_API_KEY = ""
-OPENAI_API_KEY = ""
+load_dotenv()
+
+PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
+OPENAI_API_KEY=os.environ.get('OPENAI_API_KEY')
 
 # Set Environment Variables
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
@@ -24,7 +25,7 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")  # Updated class
 
 # Pinecone Index
-index_name = "medical"
+index_name = "med123"
 docsearch = PineconeVectorStore.from_existing_index(
     index_name=index_name,
     embedding=embeddings
