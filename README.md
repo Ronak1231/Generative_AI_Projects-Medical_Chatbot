@@ -78,6 +78,7 @@ project/
 4. Query Processing:
   a. Retrieves relevant document chunks based on similarity.
   b. Generates responses using LLM and the retrieved context.
+
 **Frontend Flow**
 1. User inputs a message in the chat interface.
 2. Flask processes the request, retrieves relevant context, and generates a response.
