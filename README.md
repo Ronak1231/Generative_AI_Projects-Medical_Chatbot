@@ -29,7 +29,8 @@ Ensure the following are installed and configured:
 4. Hugging Face model (sentence-transformers/all-MiniLM-L6-v2 for embeddings).
 5. Flask framework.
 
-File Structure:
+**File Structure:**
+
 project/
 │
 ├── app.py     
@@ -55,17 +56,15 @@ project/
   bash
   pip install -r requirements.txt
 3. Configure Environment Variables
-Create a .env file in the project root:
+   Create a .env file in the project root:
    PINECONE_API_KEY=your_pinecone_api_key
    OPENAI_API_KEY=your_openai_api_key
 4. Initialize Pinecone Index
    Use the provided helper.py functions to upload medical document embeddings into Pinecone.
-
 5. Run the Flask App
-bash
-Copy code
-python app.py
-Navigate to http://localhost:8080 in your browser to interact with the chatbot.
+   bash
+   python app.py
+6. Navigate to http://localhost:8080 in your browser to interact with the chatbot.
 
 **How It Works**:
 **Backend Flow**
