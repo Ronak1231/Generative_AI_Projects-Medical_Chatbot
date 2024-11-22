@@ -46,6 +46,7 @@ project/
 ├── templates/
 
 │   ├── chat.html 
+
 ├── model/
 
 │   ├── llama-2-7b-chat.ggmlv3.q2_K.bin #from the following link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
