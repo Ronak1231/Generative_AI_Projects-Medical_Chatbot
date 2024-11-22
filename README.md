@@ -35,23 +35,21 @@ Ensure the following are installed and configured:
 
 project/
 
-├── app.py     
+├── app.py 
+|
 ├── src/
-
 │   ├── helper.py     
 │   ├── prompt.py    
 │
 ├── static/
-
 │   ├── style.css     
 │
 ├── templates/
-
 │   ├── chat.html 
-
+|
 ├── model/
 │   ├── llama-2-7b-chat.ggmlv3.q2_K.bin 
-
+|
 ├── requirements.txt     
 ├── .env               
 
