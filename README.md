@@ -31,28 +31,6 @@ Ensure the following are installed and configured:
 6. ## Download the Llama 2 Model: llama-2-7b-chat.ggmlv3.q4_0.bin
    ## From the following link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
 
-**File Structure:**
-
-project/
-
-├── app.py 
-|
-├── src/
-│   ├── helper.py     
-│   ├── prompt.py    
-│
-├── static/
-│   ├── style.css     
-│
-├── templates/
-│   ├── chat.html 
-|
-├── model/
-│   ├── llama-2-7b-chat.ggmlv3.q2_K.bin 
-|
-├── requirements.txt     
-├── .env               
-
 **Setup Instructions**:
 1. Clone the Repository
    bash
