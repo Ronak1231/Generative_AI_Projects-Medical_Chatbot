@@ -90,5 +90,7 @@ This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cl
 **Future Improvements**:
 
 Add user authentication for personalized experiences.
+
 Expand to support multi-language queries.
+
 Incorporate advanced LLMs for more nuanced responses.
