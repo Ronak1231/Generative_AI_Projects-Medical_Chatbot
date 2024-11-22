@@ -90,9 +90,11 @@ project/
 5. Bootstrap: For responsive chat interface design.
 
 **Deployment**:
+
 This project can be deployed locally or on cloud platforms (e.g., AWS, Google Cloud, Heroku). Ensure your API keys are securely stored in environment variables.
 
-**Future Improvements**
+**Future Improvements**:
+
 Add user authentication for personalized experiences.
 Expand to support multi-language queries.
 Incorporate advanced LLMs for more nuanced responses.
