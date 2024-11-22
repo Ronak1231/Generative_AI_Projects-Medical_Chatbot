@@ -35,14 +35,16 @@ project/
 
 ├── app.py     
 ├── src/
-
+|
 │   ├── helper.py     
 │   ├── prompt.py    
 │
 ├── static/
+|
 │   ├── style.css     
 │
 ├── templates/
+|
 │   ├── chat.html   
 │
 ├── requirements.txt     
