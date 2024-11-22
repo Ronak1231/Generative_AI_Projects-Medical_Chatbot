@@ -70,6 +70,7 @@ project/
 6. Navigate to http://localhost:8080 in your browser to interact with the chatbot.
 
 **How It Works**:
+
 **Backend Flow**
 1. PDF Loading: Reads and processes PDF documents into text chunks.
 2. Embeddings: Generates vector representations of text using Hugging Face.
@@ -82,7 +83,8 @@ project/
 2. Flask processes the request, retrieves relevant context, and generates a response.
 3. Response is displayed in the chat interface dynamically using AJAX.
 
-**Technologies Used**
+**Technologies Used**:
+
 1. Flask: For backend server and API routing.
 2. LangChain: Orchestrates the retrieval and generation logic.
 3. Hugging Face: Provides embeddings for document vectorization.
