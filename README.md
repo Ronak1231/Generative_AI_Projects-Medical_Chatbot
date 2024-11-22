@@ -22,13 +22,16 @@ The chatbot is capable of answering user queries by leveraging a retriever-based
 Ensure the following are installed and configured:
 
 1. Python 3.9 or above.
-2. Required Python libraries (install using `requirements.txt`):
+2. # Create a new virtual environment
+python -m venv newvenv
+newvenv\Scripts\activate
+3. Required Python libraries (install using `requirements.txt`):
    ```bash
    pip install -r requirements.txt
-3. Pinecone API Key and Index setup.
-4. Hugging Face model (sentence-transformers/all-MiniLM-L6-v2 for embeddings).
-5. Flask framework.
-6. Download the Llama 2 Model:
+4. Pinecone API Key and Index setup.
+5. Hugging Face model (sentence-transformers/all-MiniLM-L6-v2 for embeddings).
+6. Flask framework.
+7. Download the Llama 2 Model:
    llama-2-7b-chat.ggmlv3.q4_0.bin
    
    From the following link:
