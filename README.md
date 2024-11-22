@@ -32,19 +32,19 @@ Ensure the following are installed and configured:
 File Structure:
 project/
 │
-├── app.py                # Flask application entry point
+├── app.py     
 ├── src/
-│   ├── helper.py         # PDF processing and embedding functions
-│   ├── prompt.py         # Chat prompt templates
+│   ├── helper.py     
+│   ├── prompt.py    
 │
 ├── static/
-│   ├── style.css         # Chat UI styles
+│   ├── style.css     
 │
 ├── templates/
-│   ├── chat.html         # Chat UI template
+│   ├── chat.html   
 │
-├── requirements.txt      # Required Python libraries
-├── .env                  # Environment variables (Pinecone, OpenAI keys)
+├── requirements.txt     
+├── .env               
 
 **Setup Instructions**:
 1. Clone the Repository
