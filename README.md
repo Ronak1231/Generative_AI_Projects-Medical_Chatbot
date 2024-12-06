@@ -105,6 +105,8 @@ project/
 │
 ├── requirements.txt       # Required Python libraries
 ├── .env                   # Environment variables (Pinecone, OpenAI keys)
+├── LICENSE                # License file (MIT License)
+
 ```
 
 ---
@@ -168,6 +170,12 @@ Ronak Bansal
 
 ## 🙌 Contributing  
 Feel free to fork this repository, make improvements, and submit a pull request.  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
 
 ---
 
