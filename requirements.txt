@@ -1,15 +1,38 @@
-huggingface-hub==0.20.2
-ctransformers==0.2.5
-sentence-transformers==2.2.2
+
+# LangChain Core Ecosystem
 langchain
-protobuf==3.20.3
-flask
-pypdf
-python-dotenv
-pinecone[grpc]
+langchain-community
 langchain-pinecone
-langchain_community
-langchain_openai
-langchain_experimental
+langchain-openai
+langchain-experimental
+langchain_huggingface
+langchain_google_genai
+
+# Embeddings & Transformers for gemini api
+# sentence-transformers
+# huggingface-hub==0.17.3  # Required for compatibility with sentence-transformers
+ctransformers  # For local Llama2 .bin models
+
+# Vector DB
+pinecone-client
+
+# Google Gemini
+google-generativeai
+
+# Web App
+flask
+python-dotenv
+pypdf
+
+# Fix for some internal dependencies
+protobuf
 googleapis-common-protos
+
+# Local source
 -e .
+
+
+# Embeddings & Transformers for llama 2 model 
+sentence-transformers==2.6.1 
+transformers==4.40.2 
+huggingface-hub==0.22.2
