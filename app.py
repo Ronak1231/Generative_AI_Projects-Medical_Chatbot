@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from src.helper import download_hugging_face_embeddings
 from langchain_pinecone import PineconeVectorStore
-from langchain.llms import CTransformers
+from langchain_community.llms import CTransformers
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -18,7 +18,7 @@ os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 
 embeddings = download_hugging_face_embeddings()
 
-index_name = "med123"
+index_name = "smartnetsample"
 
 # Embed each chunk and upsert the embeddings into your Pinecone index.
 docsearch = PineconeVectorStore.from_existing_index(
@@ -28,7 +28,7 @@ docsearch = PineconeVectorStore.from_existing_index(
 
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":2})
 
-llm = CTransformers(model="C:/Users/91982/Music/new/End-to-end-Medical-Chatbot-Generative-AI/model/llama-2-7b-chat.ggmlv3.q4_0.bin",
+llm = CTransformers(model="C:/Users/91982/Documents/SmartNet/Generative_AI_Projects-Medical_Chatbot/model/llama-2-7b-chat.ggmlv3.q4_0.bin",
                   model_type="llama",
                   config={'max_new_tokens':500,
                           'temperature':0.7})
