@@ -28,11 +28,10 @@ pypdf
 protobuf
 googleapis-common-protos
 
-# Local source
--e .
-
-
 # Embeddings & Transformers for llama 2 model 
 sentence-transformers==2.6.1 
 transformers==4.40.2 
 huggingface-hub==0.22.2
+
+# Local source
+-e .
