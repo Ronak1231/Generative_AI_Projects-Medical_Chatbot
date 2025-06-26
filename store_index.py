@@ -1,40 +1,37 @@
 from src.helper import load_pdf_file, text_split, download_hugging_face_embeddings
-from pinecone.grpc import PineconeGRPC as Pinecone
-from pinecone import ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 from dotenv import load_dotenv
+from pinecone import Pinecone, ServerlessSpec
 import os
 
-
+# Load environment variables
 load_dotenv()
-
-PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
-
-
-extracted_data=load_pdf_file(data='Data/')
-text_chunks=text_split(extracted_data)
-embeddings = download_hugging_face_embeddings()
-
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
-index_name = "med123"
+# Prepare data
+extracted_data = load_pdf_file(data='Data/')
+text_chunks = text_split(extracted_data)
+embeddings = download_hugging_face_embeddings()
 
+# Pinecone index config
+index_name = "smartnetsample"
+dimension = 384
+region = "us-east-1"
 
-pc.create_index(
-    name=index_name,
-    dimension=384, 
-    metric="cosine", 
-    spec=ServerlessSpec(
-        cloud="aws", 
-        region="us-east-1"
-    ) 
-) 
+# Create index if it doesn't exist
+if index_name not in pc.list_indexes().names():
+    pc.create_index(
+        name=index_name,
+        dimension=dimension,
+        metric="cosine",
+        spec=ServerlessSpec(cloud="aws", region=region)
+    )
 
-# Embed each chunk and upsert the embeddings into your Pinecone index.
+# Upload data to Pinecone index
 docsearch = PineconeVectorStore.from_documents(
     documents=text_chunks,
     index_name=index_name,
-    embedding=embeddings, 
+    embedding=embeddings,
 )
